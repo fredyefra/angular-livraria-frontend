@@ -11,14 +11,17 @@ import {MatIconModule} from '@angular/material/icon';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavigatorComponent } from './components/template/navigator/navigator.component'; 
 import {MatSidenavModule} from '@angular/material/sidenav'; 
-import {MatListModule} from '@angular/material/list'
+import {MatListModule} from '@angular/material/list';
+import { HomeComponent } from './components/view/home/home.component'
+import {MatCardModule} from '@angular/material/card'; 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NavigatorComponent
+    NavigatorComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +30,8 @@ import {MatListModule} from '@angular/material/list'
     MatToolbarModule,
     MatIconModule,
     MatSidenavModule, 
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

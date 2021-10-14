@@ -5,7 +5,8 @@
 
 img {
   height: 3rem;
-  opacity: 0.4;
+  /* opacity: 0.4; */
+  background-image: none !important;
 }
 
 span {
