@@ -1,12 +1,14 @@
 .header {
   justify-content: center;
   height: 10%;
+  /* background-image: linear-gradient(yellow, rgb(167, 167, 162)); */
 }
 
 img {
   height: 3rem;
   /* opacity: 0.4; */
   background-image: none !important;
+  /* background-image: linear-gradient(yellow, rgb(167, 167, 162)); */
 }
 
 span {
@@ -17,4 +19,6 @@ span {
 h1 {
   padding-left: 1.2rem;
   font-size: 2rem;
+  /* color: black; */
+  font-weight: 500; 
 }
