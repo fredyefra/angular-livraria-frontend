@@ -11,7 +11,7 @@ export class CategoriaListComponent implements OnInit {
 
   categorias: Categoria[] = []; 
 
-  displayedColumns: string[] = ['identificador', 'nome', 'descricao', 'acoes'];
+  displayedColumns: string[] = ['identificador', 'nome', 'descricao',  'livros', 'acoes'];
 
   constructor(private service:CategoriaService) { }
 

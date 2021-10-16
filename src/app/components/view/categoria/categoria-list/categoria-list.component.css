@@ -14,11 +14,34 @@
     font-weight: 500;
 }
 
+.header{
+    width: 6rem;
+}
+
 .content-tabela{
 
 }
 
 .tabela{
 width: 100%;
+}
 
+.livro{
+    margin-left: .5rem;
+    color: royalblue;
+}
+
+.description{
+    color: rgb(0, 255, 149);
+    /* margin-left: .3rem; */
+}
+
+.edit{
+color: rgb(30, 114, 210);
+
+}
+
+.delete{
+  color: rgb(236, 65, 65);
+  /* margin-right: .5rem;   */
 }

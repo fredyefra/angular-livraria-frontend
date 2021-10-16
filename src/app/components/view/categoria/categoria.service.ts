@@ -17,7 +17,6 @@ export class CategoriaService {
   findAll():Observable<Categoria[]>{
     const url = `${this.urlEndpoint}/categorias`;
     return this.http.get<Categoria[]>(url);
-    
   }
 
 }
