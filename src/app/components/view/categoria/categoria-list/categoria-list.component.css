@@ -1,6 +1,10 @@
 .content{
     width: 90%;
     margin: 1.4rem auto auto auto;
+    /* background: url(/assets/img/books-1.png) no-repeat center; 
+  background-size: cover;
+  height: 500px;
+  position: relative; */
 }
 
 .title{

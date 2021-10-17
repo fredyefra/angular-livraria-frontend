@@ -18,6 +18,10 @@ import {MatTableModule} from '@angular/material/table';
 import { CategoriaListComponent } from './components/view/categoria/categoria-list/categoria-list.component';
 import {CdkTableModule} from '@angular/cdk/table';
 import {MatButtonModule} from '@angular/material/button';
+import {MatDividerModule} from '@angular/material/divider'; 
+import {MatInputModule} from '@angular/material/input';
+import {FormsModule} from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field'; 
 import { CategoriaCreateComponent } from './components/view/categoria/categoria-create/categoria-create.component';
 
 @NgModule({
@@ -42,7 +46,11 @@ import { CategoriaCreateComponent } from './components/view/categoria/categoria-
     MatTableModule,
     CdkTableModule,
     HttpClientModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDividerModule,
+    MatInputModule,
+    FormsModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
