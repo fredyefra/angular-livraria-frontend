@@ -22,6 +22,7 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatInputModule} from '@angular/material/input';
 import {FormsModule} from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field'; 
+import {MatSnackBarModule} from '@angular/material/snack-bar'; 
 import { CategoriaCreateComponent } from './components/view/categoria/categoria-create/categoria-create.component';
 
 @NgModule({
@@ -50,7 +51,8 @@ import { CategoriaCreateComponent } from './components/view/categoria/categoria-
     MatDividerModule,
     MatInputModule,
     FormsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

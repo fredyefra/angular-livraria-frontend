@@ -3,7 +3,7 @@
   margin: 1rem auto;
 }
 
-/* .title
+ .title
 {
 color: royalblue;
 }
@@ -11,7 +11,7 @@ color: royalblue;
 .subtitle{
     line-height: 2rem;
     color: steelblue;
-} */
+} 
 
 /*CELULAR*/
 @media (max-width: 450px) {
