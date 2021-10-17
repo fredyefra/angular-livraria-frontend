@@ -17,6 +17,8 @@ import { HomeComponent } from './components/view/home/home.component';
 import {MatTableModule} from '@angular/material/table'; 
 import { CategoriaListComponent } from './components/view/categoria/categoria-list/categoria-list.component';
 import {CdkTableModule} from '@angular/cdk/table';
+import {MatButtonModule} from '@angular/material/button';
+import { CategoriaCreateComponent } from './components/view/categoria/categoria-create/categoria-create.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import {CdkTableModule} from '@angular/cdk/table';
     FooterComponent,
     NavigatorComponent,
     HomeComponent,
-    CategoriaListComponent
+    CategoriaListComponent,
+    CategoriaCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,8 @@ import {CdkTableModule} from '@angular/cdk/table';
     MatCardModule,
     MatTableModule,
     CdkTableModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

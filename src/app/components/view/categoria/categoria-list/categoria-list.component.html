@@ -2,8 +2,12 @@
   <div class="title">
     <h1>Categoria</h1>
   </div>
+  
+  <button class="button mat-elevation-z8" (click)="rotaNovaCategoria()" mat-flat-button color="primary">
+    + NOVA CATEGORIA
+  </button>
 
-  <div class="mat-elevation-z8 content-tabela">
+  <div class="mat-elevation-z8">
     <table mat-table class="tabela" [dataSource]="categorias">
       <!-- Position Column -->
       <ng-container matColumnDef="identificador">

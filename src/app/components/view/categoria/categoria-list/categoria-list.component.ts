@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Rotate90DegreesCcw } from '@material-ui/icons';
 import { Categoria } from '../categoria.model';
 import { CategoriaService } from '../categoria.service';
 
@@ -10,10 +12,11 @@ import { CategoriaService } from '../categoria.service';
 export class CategoriaListComponent implements OnInit {
 
   categorias: Categoria[] = []; 
+  //rota: Router = new Router;
 
   displayedColumns: string[] = ['identificador', 'nome', 'descricao',  'livros', 'acoes'];
 
-  constructor(private service:CategoriaService) { }
+  constructor(private service:CategoriaService, private rota:Router) { }
 
   ngOnInit(): void {
   this.findAll();
@@ -24,6 +27,10 @@ export class CategoriaListComponent implements OnInit {
       console.log(resposta);
       this.categorias = resposta;
     })
+  }
+
+  rotaNovaCategoria(){
+    this.rota.navigate(["categorias/create"]);
   }
 
 }
