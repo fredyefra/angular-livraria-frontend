@@ -31,4 +31,9 @@ export class CategoriaCreateComponent implements OnInit {
         }
       })
   }
+
+  cancel(): void {
+    this.rota.navigate(['categorias']);
+  }
+
 }
