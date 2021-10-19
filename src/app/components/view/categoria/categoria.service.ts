@@ -9,6 +9,7 @@ import { Categoria } from "./categoria.model";
   providedIn: "root",
 })
 export class CategoriaService {
+  
   urlEndpoint: String = environment.urlEndPoint;
 
   constructor(private http: HttpClient, private _snack: MatSnackBar) {}

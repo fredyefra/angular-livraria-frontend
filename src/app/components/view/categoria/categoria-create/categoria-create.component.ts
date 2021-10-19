@@ -14,15 +14,21 @@ export class CategoriaCreateComponent implements OnInit {
     descricao: "",
   };
 
-  constructor(private service: CategoriaService, private rota:Router) {}
+  constructor(private service: CategoriaService, private rota: Router) {}
 
   ngOnInit(): void {}
 
   create(): void {
-    this.service.create(this.categoria).subscribe((resposta) => {
-    console.log(resposta);
-    this.service.mensagem('Categoria criada com sucesso!');
-    this.rota.navigate(['categorias']);  
-  });
+    this.service.create(this.categoria).subscribe(
+      (resposta) => {
+        //console.log(resposta);
+        this.service.mensagem('Categoria criada com sucesso!');
+        this.rota.navigate(['categorias']);
+      },
+      err => {
+        for (let i = 0; i < err.error.errors.length; i++) {
+        this.service.mensagem(err.error.errors[i].message);
+        }
+      })
   }
 }
