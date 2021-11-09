@@ -19,6 +19,11 @@ export class CategoriaService {
     return this.http.get<Categoria[]>(url);
   }
 
+  findById(id: String): Observable<Categoria> {
+    const url = `${this.urlEndpoint}/categorias/${id}`
+    return this.http.get<Categoria>(url);
+  }
+
   create(categoria: Categoria): Observable<Categoria> {
     const url = `${this.urlEndpoint}/categorias`;
     return this.http.post<Categoria>(url, categoria);
