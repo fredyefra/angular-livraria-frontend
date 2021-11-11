@@ -28,10 +28,15 @@ export class CategoriaService {
     const url = `${this.urlEndpoint}/categorias`;
     return this.http.post<Categoria>(url, categoria);
   }
-
+  
   delete(id:String): Observable<void>{
     const url = `${this.urlEndpoint}/categorias/${id}`;
     return this.http.delete<void>(url);  
+  }
+
+  update(id:String): Observable<Categoria>{
+   const url = `${this.urlEndpoint}/categorias/${id}`;
+   return this.http.put<Categoria>(url,id);
   }
 
   mensagem(mensagem: String): void {

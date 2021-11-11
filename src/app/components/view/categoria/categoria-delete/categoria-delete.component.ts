@@ -9,7 +9,7 @@ import { ActivatedRoute, Router } from "@angular/router";
   styleUrls: ["./categoria-delete.component.css"],
 })
 export class CategoriaDeleteComponent implements OnInit {
-  categoria: Categoria = {
+    categoria: Categoria = {
     identificador: "",
     nome: "",
     descricao: "",
@@ -48,5 +48,4 @@ export class CategoriaDeleteComponent implements OnInit {
  cancel(): void{
    this.rota.navigate(['categorias'])
  }
-
 }

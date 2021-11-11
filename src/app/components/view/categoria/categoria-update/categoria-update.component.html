@@ -1,0 +1,24 @@
+<form method="POST">
+  <h1>.::Editar Categoria::.</h1>
+ 
+  <mat-form-field class="form">
+    <mat-label>Nome</mat-label>
+    <input matInput type="text" [(ngModel)]="categoria.nome" name="nome" disabled="false" />
+  </mat-form-field>
+
+  <mat-form-field class="form">
+    <mat-label>Descrição</mat-label>
+    <textarea matInput  type="text" [(ngModel)]="categoria.descricao" name="descricao"  name="descricao" disabled="false"></textarea>
+  </mat-form-field>
+
+  <div class="buttons">
+    <button (click) ="update()" class="button mat-elevation-z8" mat-flat-button color="primary">
+        SALVAR
+      </button>
+      
+      <button (click) ="cancel()"  class="button mat-elevation-z8" mat-flat-button color="warn">
+        CANCELAR
+      </button>     
+  </div>
+
+</form>

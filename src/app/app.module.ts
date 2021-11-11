@@ -1,6 +1,5 @@
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
-
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
@@ -25,6 +24,10 @@ import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { CategoriaCreateComponent } from "./components/view/categoria/categoria-create/categoria-create.component";
 import { CategoriaDeleteComponent } from './components/view/categoria/categoria-delete/categoria-delete.component';
+import { CategoriaUpdateComponent } from './components/view/categoria/categoria-update/categoria-update.component';
+import {MatDialogModule} from '@angular/material/dialog'; 
+
+
 
 @NgModule({
   declarations: [
@@ -36,6 +39,7 @@ import { CategoriaDeleteComponent } from './components/view/categoria/categoria-
     CategoriaListComponent,
     CategoriaCreateComponent,
     CategoriaDeleteComponent,
+    CategoriaUpdateComponent,
   ],
   imports: [
     BrowserModule,
@@ -55,6 +59,7 @@ import { CategoriaDeleteComponent } from './components/view/categoria/categoria-
     FormsModule,
     MatFormFieldModule,
     MatSnackBarModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

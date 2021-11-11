@@ -1,8 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Dialog } from '@material-ui/core';
 import { Rotate90DegreesCcw } from '@material-ui/icons';
 import { Categoria } from '../categoria.model';
 import { CategoriaService } from '../categoria.service';
+import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { CategoriaUpdateComponent } from '../categoria-update/categoria-update.component';
+
 
 @Component({
   selector: 'app-categoria-list',
@@ -10,16 +14,23 @@ import { CategoriaService } from '../categoria.service';
   styleUrls: ['./categoria-list.component.css']
 })
 export class CategoriaListComponent implements OnInit {
-
+  
   categorias: Categoria[] = []; 
-  //rota: Router = new Router;
+  
+  categoria:   Categoria = {
+    identificador: "",
+    nome: "",
+    descricao: "",
+  };
+
 
   displayedColumns: string[] = ['identificador', 'nome', 'descricao',  'livros', 'acoes'];
 
-  constructor(private service:CategoriaService, private rota:Router) { }
+  constructor(private service:CategoriaService, private rota:Router, public dialog: MatDialog) {}
 
   ngOnInit(): void {
   this.findAll();
+  
   }
 
   private findAll(){
@@ -32,4 +43,34 @@ export class CategoriaListComponent implements OnInit {
   rotaNovaCategoria(): void{
     this.rota.navigate(["categorias/create"]);
   }
+
+  
+  /* openDialog(identificador: string): void{
+    
+    const dialogRef = this.dialog.open(CategoriaUpdateComponent);
+
+    dialogRef.afterOpened().subscribe(result => {
+      this.service
+      .findById(identificador).subscribe((formulario) => {
+        //this.categoria.identificador = resposta.identificador;
+        this.categoria.nome = formulario.nome;
+        this.categoria.descricao = formulario.descricao;
+        console.log(this.categoria.descricao)
+      })
+
+    });
+  } */
+
+  
+  
+  /* update(): void {
+    this.service.update(this.categoria.identificador!).subscribe(result => {
+      //this.service.delete(this.categoria.identificador!).subscribe((formulario) => {
+        this.service.mensagem('Categoria alterada com sucesso!') 
+        //this.rota.navigate(['categorias'])
+    
+    }) 
+  }*/
+
+
 }
