@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LivroListComponent } from './component/views/livro/livro-list/livro-list.component';
 import { CategoriaCreateComponent } from './components/view/categoria/categoria-create/categoria-create.component';
 import { CategoriaDeleteComponent } from './components/view/categoria/categoria-delete/categoria-delete.component';
 import { CategoriaListComponent } from './components/view/categoria/categoria-list/categoria-list.component';
@@ -35,7 +36,15 @@ const routes: Routes = [
   {
     path: 'categorias/update/:id',
     component:CategoriaUpdateComponent
-  }  
+  },  
+
+  /* Path = '' redireciona para atualizar categoria com id*/
+  {
+    path: 'categorias/:categoria_id/livros',
+    component:LivroListComponent
+  }
+
+
 ];
 
 @NgModule({

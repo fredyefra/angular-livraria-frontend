@@ -45,7 +45,7 @@ export class CategoriaUpdateComponent implements OnInit {
         this.rota.navigate(["categorias"]);
       },
       (err) => {
-        console.log(err);
+        this.service.mensagem("Preencher campos corretamente!")
       }
     );
   }

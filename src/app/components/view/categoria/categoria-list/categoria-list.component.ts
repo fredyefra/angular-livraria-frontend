@@ -5,7 +5,7 @@ import { Rotate90DegreesCcw } from '@material-ui/icons';
 import { Categoria } from '../categoria.model';
 import { CategoriaService } from '../categoria.service';
 import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { CategoriaUpdateComponent } from '../categoria-update/categoria-update.component';
+
 
 
 @Component({
@@ -23,14 +23,12 @@ export class CategoriaListComponent implements OnInit {
     descricao: "",
   };
 
-
   displayedColumns: string[] = ['identificador', 'nome', 'descricao',  'livros', 'acoes'];
 
   constructor(private service:CategoriaService, private rota:Router, public dialog: MatDialog) {}
 
   ngOnInit(): void {
   this.findAll();
-  
   }
 
   private findAll(){
