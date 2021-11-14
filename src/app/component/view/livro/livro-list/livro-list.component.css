@@ -1,0 +1,55 @@
+.content{
+    width: 90%;
+    margin: 1.4rem auto auto auto;
+    /* background: url(/assets/img/books-1.png) no-repeat center; 
+  background-size: cover;
+  height: 500px;
+  position: relative; */
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.title h1{
+    font-size: 2rem;
+    /* color:black; */
+    font-weight: 500;
+}
+
+.header{
+    width: 6rem;
+}
+
+.content-tabela{
+
+}
+
+.button{
+    margin-bottom: .8rem;
+}
+
+.tabela{
+width: 100%;
+}
+
+.livro{
+    margin-left: .5rem;
+    color: royalblue;
+}
+
+.description{
+    color: rgb(0, 255, 149);
+    /* margin-left: .3rem; */
+}
+
+.edit{
+color: rgb(30, 114, 210);
+
+}
+
+.delete{
+  color: rgb(236, 65, 65);
+  /* margin-right: .5rem;   */
+}
