@@ -39,6 +39,4 @@ export class LivroListComponent implements OnInit {
   novoLivro(): void{
     this.rota.navigate([`/categorias/${this.categoria_id}/livros/create`]);
   }
-
-
 }

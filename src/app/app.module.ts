@@ -19,7 +19,7 @@ import { CdkTableModule } from "@angular/cdk/table";
 import { MatButtonModule } from "@angular/material/button";
 import { MatDividerModule } from "@angular/material/divider";
 import { MatInputModule } from "@angular/material/input";
-import { FormsModule } from "@angular/forms";
+import { FormsModule,  ReactiveFormsModule } from "@angular/forms";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { CategoriaCreateComponent } from "./components/view/categoria/categoria-create/categoria-create.component";
@@ -28,7 +28,7 @@ import { CategoriaUpdateComponent } from './components/view/categoria/categoria-
 import {MatDialogModule} from '@angular/material/dialog';
 import {LivroListComponent} from './components/view/livro/livro-list/livro-list.component';
 import { LivroCreateComponent } from "./components/view/livro/livro-create/livro-create.component";
-//import { LivroComponent } from './components/view/livro/livro.component';
+
 
 
 
@@ -65,6 +65,7 @@ import { LivroCreateComponent } from "./components/view/livro/livro-create/livro
     MatFormFieldModule,
     MatSnackBarModule,
     MatDialogModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
