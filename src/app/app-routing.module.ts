@@ -1,11 +1,12 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { LivroListComponent } from "./component/view/livro/livro-list/livro-list.component";
 import { CategoriaCreateComponent } from "./components/view/categoria/categoria-create/categoria-create.component";
 import { CategoriaDeleteComponent } from "./components/view/categoria/categoria-delete/categoria-delete.component";
 import { CategoriaListComponent } from "./components/view/categoria/categoria-list/categoria-list.component";
 import { CategoriaUpdateComponent } from "./components/view/categoria/categoria-update/categoria-update.component";
+import { LivroListComponent } from "./components/view/livro/livro-list/livro-list.component";
 import { HomeComponent } from "./components/view/home/home.component";
+
 
 /* Path = '' redireciona para a pagina home*/
 const routes: Routes = [
@@ -38,11 +39,11 @@ const routes: Routes = [
     component: CategoriaUpdateComponent,
   },
 
-  /* Path = '' redireciona para atualizar categoria com id*/
+  /* Path = '' redireciona para a pagina livros*/
   {
     path: "categorias/:categoria_id/livros",
     component: LivroListComponent,
-  },
+  }, 
 ];
 
 @NgModule({

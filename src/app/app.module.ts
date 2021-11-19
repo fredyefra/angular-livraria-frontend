@@ -26,7 +26,10 @@ import { CategoriaCreateComponent } from "./components/view/categoria/categoria-
 import { CategoriaDeleteComponent } from './components/view/categoria/categoria-delete/categoria-delete.component';
 import { CategoriaUpdateComponent } from './components/view/categoria/categoria-update/categoria-update.component';
 import {MatDialogModule} from '@angular/material/dialog';
-import {LivroListComponent} from './component/view/livro/livro-list/livro-list.component';
+import {LivroListComponent} from './components/view/livro/livro-list/livro-list.component';
+import { LivroCreateComponent } from "./components/view/livro/livro-create/livro-create.component";
+//import { LivroComponent } from './components/view/livro/livro.component';
+
 
 
 @NgModule({
@@ -41,6 +44,7 @@ import {LivroListComponent} from './component/view/livro/livro-list/livro-list.c
     CategoriaDeleteComponent,
     CategoriaUpdateComponent,
     LivroListComponent,
+    LivroCreateComponent,
   ],
   imports: [
     BrowserModule,
