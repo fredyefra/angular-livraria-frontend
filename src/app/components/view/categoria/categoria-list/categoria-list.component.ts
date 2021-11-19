@@ -38,7 +38,7 @@ export class CategoriaListComponent implements OnInit {
     })
   }
 
-  rotaNovaCategoria(): void{
+  novaCategoria(): void{
     this.rota.navigate(["categorias/create"]);
   }
 

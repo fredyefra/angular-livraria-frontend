@@ -1,1 +1,31 @@
-<p>livro-create works!</p>
+<form method="POST">
+    <h1>
+        .::Novo Livro::.
+    </h1>
+    <mat-form-field class="form">
+       <mat-label>Título</mat-label>
+       <input matInput  type="text" name="titulo" placeholder="lorem ipsum" maxlength="100">
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Nome do autor</mat-label>
+        <input matInput  type="text" name="autor" placeholder="lorem ipsum" maxlength="100">
+     </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Texto</mat-label>
+        <textarea matInput  type="text" name="texto" placeholder="lorem ipsum" maxlength="2000000"></textarea>
+     </mat-form-field>
+
+    <div class="buttons">
+        <button   class="button mat-elevation-z8" mat-flat-button color="primary">
+            CRIAR
+          </button>
+          
+          <button  class="button mat-elevation-z8" mat-flat-button color="warn">
+            CANCELAR
+          </button>    
+    </div>
+
+</form>
+

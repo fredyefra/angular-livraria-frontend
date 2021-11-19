@@ -1,8 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute, Router } from "@angular/router";
 import { Categoria } from "src/app/components/view/categoria/categoria.model";
-import { Livro } from "../livro.model";
-import { LivroService } from "../livro.service";
+import { Livro } from "../../../../components/view/livro/livro.model";
+import { LivroService } from "../../../../components/view/livro/livro.service";
 
 @Component({
   selector: "app-livro-list",
@@ -22,7 +22,7 @@ export class LivroListComponent implements OnInit {
     
   }; */
 
-  constructor(private service: LivroService, private router: ActivatedRoute) {}
+  constructor(private service: LivroService, private rota: Router, private router: ActivatedRoute) {}
 
   ngOnInit(): void {
     this.categoria_id = this.router.snapshot.paramMap.get("categoria_id")!;
@@ -35,4 +35,10 @@ export class LivroListComponent implements OnInit {
       console.log(this.livros);
     });
   }
+
+  novoLivro(): void{
+    this.rota.navigate([`/categorias/${this.categoria_id}/livros/create`]);
+  }
+
+
 }
