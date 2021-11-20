@@ -14,29 +14,25 @@ export class LivroListComponent implements OnInit {
 
   livros: Livro[] = [];
 
-  categoria_id: string = "";
+  id_cat: string = "";
 
-  /* livro:   Livro = {
-    identificador: "",
-    titulo: "",
-    
-  }; */
+  
 
   constructor(private service: LivroService, private rota: Router, private router: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.categoria_id = this.router.snapshot.paramMap.get("categoria_id")!;
+    this.id_cat = this.router.snapshot.paramMap.get("id_cat")!;
     this.findAll();
   }
 
   findAll(): void {
-    this.service.findAllByCategoria(this.categoria_id).subscribe((resposta) => {
+    this.service.findAllByCategoria(this.id_cat).subscribe((resposta) => {
       this.livros = resposta;
       console.log(this.livros);
     });
   }
 
   novoLivro(): void{
-    this.rota.navigate([`/categorias/${this.categoria_id}/livros/create`]);
+    this.rota.navigate([`/categorias/${this.id_cat}/livros/create`]);
   }
 }

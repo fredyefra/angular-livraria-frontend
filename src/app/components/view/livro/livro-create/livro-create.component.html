@@ -4,19 +4,19 @@
     </h1>
     <mat-form-field class="form">
        <mat-label>Título</mat-label>
-       <input matInput [formControl]="titulo" required type="text"  type="text" name="titulo" placeholder="lorem ipsum" maxlength="100">
+       <input matInput  [(ngModel)]="livro.titulo" [formControl]="titulo" required type="text"  type="text" name="titulo" placeholder="lorem ipsum" maxlength="100">
        <mat-error *ngIf="titulo.invalid"> {{ message() }}</mat-error>
     </mat-form-field>
 
     <mat-form-field class="form">
         <mat-label>Nome do autor</mat-label>
-        <input  matInput [formControl]="nome_autor" required type="text" name="nome_autor" placeholder="lorem ipsum" maxlength="100">
-        <mat-error *ngIf="nome_autor.invalid"> {{ message() }}</mat-error> 
+        <input  matInput  [(ngModel)]="livro.nomeAutor"  [formControl]="nomeAutor" required type="text" name="nome_autor" placeholder="lorem ipsum" maxlength="100">
+        <mat-error *ngIf="nomeAutor.invalid"> {{ message() }}</mat-error> 
     </mat-form-field>
 
     <mat-form-field class="form">
         <mat-label>Texto</mat-label>
-        <textarea matInput  [formControl]="texto" required type="text" name="texto" placeholder="lorem ipsum" maxlength="2000000"></textarea>
+        <textarea matInput  [(ngModel)]="livro.texto"  [formControl]="texto" required type="text" name="texto" placeholder="lorem ipsum" maxlength="2000000"></textarea>
         <mat-error *ngIf="texto.invalid"> {{ message() }}</mat-error>  
     </mat-form-field>
 

@@ -37,12 +37,12 @@ const routes: Routes = [
   },
 
   {
-    path: "categorias/:categoria_id/livros",
+    path: "categorias/:id_cat/livros",
     component: LivroListComponent,
   }, 
   
   {
-    path: "categorias/:categoria_id/livros/create",
+    path: "categorias/:id_cat/livros/create",
     component: LivroCreateComponent,
   }
 

@@ -14,23 +14,21 @@ export class LivroService {
 
   constructor(private http: HttpClient, private snack: MatSnackBar) {}
 
-  findAllByCategoria(categoria_id:string): Observable<Livro[]> { 
-    const url = `${this.urlEndpoint}/livros?categoria=${categoria_id}`;
+  findAllByCategoria(id_cat:string): Observable<Livro[]> { 
+    const url = `${this.urlEndpoint}/livros?categoria=${id_cat}`;
     return this.http.get<Livro[]>(url);
   } 
 
-  create(livro: Livro): Observable<Livro> {
-    const url = `${this.urlEndpoint}/livros`;
+  create(livro: Livro, id_cat:string) : Observable<Livro> {
+    const url = `${this.urlEndpoint}/livros?categoria=${id_cat}`;
     return this.http.post<Livro>(url, livro);
   }
-
-
 
   mensagem(mensagem: String): void {
     this.snack.open(`${mensagem}`, "OK", {
       horizontalPosition: "end",
       verticalPosition: "top",
-      duration: 3500,
+      duration: 5000,
     });
   }
 

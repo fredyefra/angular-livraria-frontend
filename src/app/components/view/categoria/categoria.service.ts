@@ -43,7 +43,7 @@ export class CategoriaService {
     this._snack.open(`${mensagem}`, "OK", {
       horizontalPosition: "end",
       verticalPosition: "top",
-      duration: 3500,
+      duration: 5000,
     });
   }
 }
