@@ -7,6 +7,7 @@ import { CategoriaUpdateComponent } from "./components/view/categoria/categoria-
 import { LivroListComponent } from "./components/view/livro/livro-list/livro-list.component";
 import { HomeComponent } from "./components/view/home/home.component";
 import { LivroCreateComponent } from "./components/view/livro/livro-create/livro-create.component";
+import { LivroUpdateComponent } from "./components/view/livro/livro-update/livro-update.component";
 
 
 /* Path = '' redireciona para a pagina home*/
@@ -44,8 +45,12 @@ const routes: Routes = [
   {
     path: "categorias/:id_cat/livros/create",
     component: LivroCreateComponent,
-  }
+  },
 
+  {
+    path: "categorias/:id_cat/livros/:id/update",
+    component: LivroUpdateComponent,
+  }
 
 ];
 

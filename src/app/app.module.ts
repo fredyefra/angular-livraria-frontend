@@ -28,6 +28,7 @@ import { CategoriaUpdateComponent } from './components/view/categoria/categoria-
 import {MatDialogModule} from '@angular/material/dialog';
 import {LivroListComponent} from './components/view/livro/livro-list/livro-list.component';
 import { LivroCreateComponent } from "./components/view/livro/livro-create/livro-create.component";
+import { LivroUpdateComponent } from './components/view/livro/livro-update/livro-update.component';
 
 
 
@@ -45,6 +46,7 @@ import { LivroCreateComponent } from "./components/view/livro/livro-create/livro
     CategoriaUpdateComponent,
     LivroListComponent,
     LivroCreateComponent,
+    LivroUpdateComponent,
   ],
   imports: [
     BrowserModule,

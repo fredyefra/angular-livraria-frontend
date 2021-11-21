@@ -1,6 +1,6 @@
 <form method="GET">
     <h1>
-        .::Novo Livro::.
+        .::Editar Livro::.
     </h1>
     <mat-form-field class="form">
        <mat-label>Título</mat-label>
@@ -21,8 +21,8 @@
     </mat-form-field>
 
     <div class="buttons">
-        <button [disabled]="message()"  (click)="create()" class="button mat-elevation-z8" mat-flat-button color="primary">
-            CRIAR
+        <button [disabled]="message()"  (click)="update()" class="button mat-elevation-z8" mat-flat-button color="primary">
+            ATUALIZAR
           </button>
           
           <button  (click)="cancel()" class="button mat-elevation-z8" mat-flat-button color="warn">

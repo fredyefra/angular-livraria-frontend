@@ -19,10 +19,20 @@ export class LivroService {
     return this.http.get<Livro[]>(url);
   } 
 
+  findById(id: String): Observable<Livro> {
+    const url = `${this.urlEndpoint}/livros/${id}`;
+    return this.http.get<Livro>(url);
+  }
+
   create(livro: Livro, id_cat:string) : Observable<Livro> {
     const url = `${this.urlEndpoint}/livros?categoria=${id_cat}`;
     return this.http.post<Livro>(url, livro);
   }
+ 
+  update(livro:Livro): Observable<Livro>{
+    const url = `${this.urlEndpoint}/livros/${livro.identificador}`;
+    return this.http.put<Livro>(url,livro);
+   }
 
   mensagem(mensagem: String): void {
     this.snack.open(`${mensagem}`, "OK", {
@@ -31,5 +41,4 @@ export class LivroService {
       duration: 5000,
     });
   }
-
 }
