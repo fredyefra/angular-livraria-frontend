@@ -34,6 +34,12 @@ export class LivroService {
     return this.http.put<Livro>(url,livro);
    }
 
+  delete(id: String):Observable<void>{
+    const url = `${this.urlEndpoint}/livros/${id}`;
+    return this.http.delete<void>(url)
+  }
+
+
   mensagem(mensagem: String): void {
     this.snack.open(`${mensagem}`, "OK", {
       horizontalPosition: "end",

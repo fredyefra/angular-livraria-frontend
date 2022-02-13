@@ -16,8 +16,6 @@ export class LivroListComponent implements OnInit {
 
   id_cat: string = "";
 
-  
-
   constructor(private service: LivroService, private rota: Router, private router: ActivatedRoute) {}
 
   ngOnInit(): void {

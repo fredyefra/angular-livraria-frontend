@@ -29,6 +29,8 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {LivroListComponent} from './components/view/livro/livro-list/livro-list.component';
 import { LivroCreateComponent } from "./components/view/livro/livro-create/livro-create.component";
 import { LivroUpdateComponent } from './components/view/livro/livro-update/livro-update.component';
+import {LivroDeleteComponent} from './components/view/livro/livro-delete/livro-delete.component';
+//import { LivroDeleteComponent } from './components/view/livro/livro-delete/livro-delete.component';
 
 
 
@@ -47,6 +49,7 @@ import { LivroUpdateComponent } from './components/view/livro/livro-update/livro
     LivroListComponent,
     LivroCreateComponent,
     LivroUpdateComponent,
+    LivroDeleteComponent,
   ],
   imports: [
     BrowserModule,
