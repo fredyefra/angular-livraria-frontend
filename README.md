@@ -1,3 +1,8 @@
+<img src="captura-de-tela-livraria.png" alt="My cool logo"/>
+
+
+<img src="captura-de-tela-livraria.png" alt="My cool logo"/>
+
 # LivrariaFronted
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.
