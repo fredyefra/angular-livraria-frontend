@@ -1,7 +1,7 @@
-<img src="captura-de-tela-livraria.png" alt="My cool logo"/>
+<img src="captura-livraria1.png" alt="My cool logo"/>
 
 
-<img src="captura-de-tela-livraria.png" alt="My cool logo"/>
+<img src="captura-livraria2.png" alt="My cool logo"/>
 
 # LivrariaFronted
 
