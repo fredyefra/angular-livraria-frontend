@@ -1,11 +1,10 @@
-<img src="captura-livraria1.png" alt="My cool logo"/>
-
-
-<img src="captura-livraria2.png" alt="My cool logo"/>
-
-# LivrariaFronted
+#angular-livraria-frontend 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.
+
+<img src="captura-livraria1.png" alt="My cool logo"/>
+
+<img src="captura-livraria2.png" alt="My cool logo"/>
 
 ## Development server
 
