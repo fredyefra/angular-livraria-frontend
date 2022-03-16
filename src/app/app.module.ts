@@ -30,6 +30,7 @@ import {LivroListComponent} from './components/view/livro/livro-list/livro-list.
 import { LivroCreateComponent } from "./components/view/livro/livro-create/livro-create.component";
 import { LivroUpdateComponent } from './components/view/livro/livro-update/livro-update.component';
 import {LivroDeleteComponent} from './components/view/livro/livro-delete/livro-delete.component';
+import { LivroReadComponent } from './components/view/livro/livro-read/livro-read.component';
 //import { LivroDeleteComponent } from './components/view/livro/livro-delete/livro-delete.component';
 
 
@@ -50,6 +51,7 @@ import {LivroDeleteComponent} from './components/view/livro/livro-delete/livro-d
     LivroCreateComponent,
     LivroUpdateComponent,
     LivroDeleteComponent,
+    LivroReadComponent,
   ],
   imports: [
     BrowserModule,

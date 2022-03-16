@@ -25,9 +25,9 @@
         <ng-container matColumnDef="livros">
           <th mat-header-cell *matHeaderCellDef>LEITURA</th>
           <td mat-cell *matCellDef="let element">
-            <a class="livro">
-              <i class="material-icons">book</i>
-            </a>
+            <button mat-icon-button color="primary" routerLink="{{element.identificador}}/read"> 
+              <mat-icon>book</mat-icon>
+            </button>
           </td>
         </ng-container>
   
